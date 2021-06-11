@@ -17,6 +17,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v1
 
+      - name: Install rsync 📚
+        run: |
+          apt-get update && apt-get install -y rsync
+
       - name: Install and build
         run: npm install && npm run build
 
