@@ -1,12 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import SidebarComponent from './Components/SidebarComponent';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>SEKUIZE</p>
-      </header>
+    <div>
+      <Router>
+        <SidebarComponent/>
+        <Switch>
+          <Route path='/' />
+        </Switch>
+      </Router>
     </div>
   );
 }
