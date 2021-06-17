@@ -1,18 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
-import SidebarComponent from './Components/SidebarComponent';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div>
-      <Router>
-        <SidebarComponent/>
-        <Switch>
-          <Route path='/' />
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Home />
+    </Router>
   );
 }
 
