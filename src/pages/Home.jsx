@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import About from '../Components/About/About';
+import Banner from '../Components/Banner/Banner';
 import Navbar from '../Components/Navbar/Navbar'
 import Sidebar from '../Components/Sidebar/Sidebar'
 
@@ -12,7 +14,9 @@ function Home() {
     return (
         <>
            <Sidebar isOpen={isOpen} toggle={toggle}/>
-           <Navbar toggle={toggle}/> 
+           <Navbar toggle={toggle}/>
+           <Banner />
+           <About />
         </>
     );
 };
